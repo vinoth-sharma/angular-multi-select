@@ -6,7 +6,23 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  title = 'angular-multi-select';
+  info = `Multiselect with search is a much needed functionality , but unfortunately we don't have a proper best library available.
+          The available libraries are ,`;
+  info_end = `These libraries are basic with few bugs and not a materialized one.`
+  avail_lib = [
+    {
+      name: 'Ng multi select',
+      link: 'https://www.npmjs.com/package/ng-multiselect-dropdown',
+    },
+    {
+      name: 'Angular2-multiselect-dropdown',
+      link: 'https://www.npmjs.com/package/angular2-multiselect-dropdown',
+    },
+    {
+      name: 'Angular4 Multiselect Dropdown',
+      link: 'https://www.npmjs.com/package/angular4-multiselect-dropdown',
+    },
+  ];
 
   settings = {
     label: 'Pokemon',
@@ -66,7 +82,7 @@ export class AppComponent {
     },
   ];
 
-  getDisplayData(data){
-    return JSON.stringify(data)
+  getDisplayData(data) {
+    return JSON.stringify(data);
   }
 }
