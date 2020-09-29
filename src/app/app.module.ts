@@ -9,11 +9,13 @@ import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 
 import { FormsModule , ReactiveFormsModule } from '@angular/forms';
+import { MyHeaderComponent } from './my-header/my-header.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MatMultiselect
+    MatMultiselect,
+    MyHeaderComponent
   ],
   imports: [
     BrowserModule,

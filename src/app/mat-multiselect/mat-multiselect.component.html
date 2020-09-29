@@ -13,7 +13,7 @@
                 [disabled]="!searched_data.length || settings.isDisabled" (keydown)="$event.stopPropagation()">
                 Select all</mat-option>
             <mat-option [value]="2" style="display: none;">dummy</mat-option>
-            <input matInput (keyup)="onKey($event.target.value)" placeholder="search..." id="multiInput"
+            <input matInput (keyup)="onKey($event.target.value)" placeholder="Search..." id="multiInput"
                 [name]="settings.label" (keydown)="$event.stopPropagation()">
 
             <ng-container>

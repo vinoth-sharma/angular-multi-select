@@ -1,1 +1,44 @@
-<ng-material-multiselect [settings]="settings" [data]="data" [(inputModel)]="selected"></ng-material-multiselect>
+<app-my-header></app-my-header>
+<div class="dropdown-row wrapper row1">
+  <div class="col_2">
+    <h2>Select Pokemon</h2>
+    <div>
+      <ng-material-multiselect
+        [settings]="settings"
+        [data]="data"
+        [(inputModel)]="selected_1"
+      ></ng-material-multiselect>
+    </div>
+    <pre [innerHTML]="getDisplayData(selected_1)"></pre>
+  </div>
+  <div class="col_2">
+    <h2>Default Selection</h2>
+    <ng-material-multiselect
+      [settings]="selected_settings"
+      [data]="data"
+      [(inputModel)]="selected_2"
+    ></ng-material-multiselect>
+    <pre [innerHTML]="getDisplayData(selected_2)"></pre>
+  </div>
+  <div class="col_1">
+    <h2>Disabled Dropdown</h2>
+    <ng-material-multiselect
+      [settings]="disabled_settings"
+      [data]="[]"
+    ></ng-material-multiselect>
+  </div>
+</div>
+
+<div class="separator"></div>
+
+<div class="dropdown-row wrapper row2">
+  <div class="width40">
+    <h2>Data Source</h2>
+    <img src="/assets/data.png" alt="" srcset="" />
+  </div>
+  <div class="width40">
+    <h2>Usage</h2>
+    <img src="/assets/usage.png" alt="" srcset="" />
+    <img src="/assets/settings.png" alt="" srcset="" />
+  </div>
+</div>
